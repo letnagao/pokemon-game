@@ -41,6 +41,6 @@ class Pokemon:
         return result [wl_result]
 
 if __name__ == '__main__':
-    print(Pokemon(name="bulbasaur", primary_type="grass"))
-    print(Pokemon(name="charmander", primary_type="fire"))
-
+    bulbi = Pokemon(name="bulbasaur", primary_type="grass", max_hp=100)
+    charm = Pokemon(name="charmander", primary_type="fire", max_hp=150)
+    bulbi.battle(charm)
